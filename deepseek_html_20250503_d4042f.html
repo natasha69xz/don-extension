@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Don</title>
+  <style>
+    body {
+      width: 400px;
+      height: 500px;
+      margin: 0;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+    }
+    h1 {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 15px;
+      color: #ffffff;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 8px 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #222;
+      position: sticky;
+      top: 0;
+    }
+    tr:nth-child(even) {
+      background-color: #1a1a1a;
+    }
+    tr:hover {
+      background-color: #2a2a2a;
+    }
+    .content-cell {
+      max-width: 250px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <h1>Clipboard History</h1>
+  <table id="historyTable">
+    <thead>
+      <tr>
+        <th width="25%">Time</th>
+        <th width="75%">Content</th>
+      </tr>
+    </thead>
+    <tbody id="historyBody"></tbody>
+  </table>
+  <script src="popup.js"></script>
+</body>
+</html>
