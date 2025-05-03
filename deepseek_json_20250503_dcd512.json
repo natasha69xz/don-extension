@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Don",
+  "version": "1.0",
+  "description": "Clipboard history manager",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "permissions": ["clipboardRead", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}
